@@ -11,6 +11,9 @@ public class Main {
     if (n1 < 0) {
       throw new RuntimeException("numerador no puede ser negativo");
     }
+    if (n1 == 0) {
+      throw new RuntimeException("Nop se pede dividir por cero");
+    }
     return n1/n2;
   }
 
