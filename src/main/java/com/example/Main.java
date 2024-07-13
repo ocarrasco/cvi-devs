@@ -8,6 +8,9 @@ public class Main {
   }
 
   public static double divide(int n1, int n2) {
+    if (n1 < 0) {
+      throw new RuntimeException("numerador no puede ser negativo");
+    }
     if (n1 == 0) {
       throw new RuntimeException("Nop se pede dividir por cero");
     }
